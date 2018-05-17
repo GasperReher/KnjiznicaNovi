@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <%@ page contentType="text/html; charset=UTF-8" %>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Moja Knjiznica</title>
 
 </head>
-<body style=">
+<body>
 <div id="wrapper">
     <div>
         <header style="background-color: cornflowerblue">
             <div class="nav" style="width:100%" >
                 <div class="row">
                     <div class="col-sm-2">
-                        <img src="logo.jpg" style="height:120px">
+                        <img src="slike/logo.jpg" style="height:120px">
                     </div>
 
                     <div class="col-sm-4">
@@ -34,13 +34,13 @@
     <div class="nav">
         <ul>
             <li>
-                <a href="Index.jsp">Domov</a>
+                <a href="index">Domov</a>
             </li>
             <li>
-                <a href="Iskanje.html">Iskanje knjig</a>
+                <a href="iskanje">Iskanje knjig</a>
             </li>
             <li class="active">
-                <a href="Registracija.jsp">Registracija</a>
+                <a href="registracija">Registracija</a>
             </li>
             <div id="prijava">
             <li class="active" style="float:right;color:white" >
@@ -169,7 +169,6 @@
             </div>
         </div>
 
-
-
+</div>
 </body>
 </html>
