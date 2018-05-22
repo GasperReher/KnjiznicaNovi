@@ -39,8 +39,11 @@
             <li>
                 <a href="iskanje">Iskanje knjig</a>
             </li>
-            <li class="active">
+            <li >
                 <a href="registracija">Registracija</a>
+            </li>
+            <li class="active">
+                <a href="dodajKnj">Dodaj Knjigo</a>
             </li>
             <div id="prijava">
                 <li class="active" style="float:right;color:white" >
@@ -59,7 +62,6 @@
     </div>
 
     <br>
-
     <div class="container" style="width:100%">
         <div class="row" style="width:100%">
             <div class="col-sm-3"></div>
@@ -68,94 +70,113 @@
                     <form name="vnosP">
                         <div class="container2">
 
-                            <h3 class="reg">Podatki uporabnika</h3>
+                            <h3 class="reg">Podatki o knjigi</h3>
 
                         </div>
                         <div class="container1">
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <p>Ime</p>
-                                </div>
-                                <div class="col-sm-2">
-                                    <input type="text" name="rIme">
-                                </div>
 
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <p>Priimek</p>
-                                </div>
-                                <div class="col-sm-2">
-                                    <input type="text" name="rPriimek">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <p>Email</p>
-                                </div>
-                                <div class="col-sm-2">
-                                    <input type="text" name="rEmail">
-                                </div>
-                            </div>
                             <div class="row">
                                 <div class="col-sm-2">
                                     <p>Naslov</p>
                                 </div>
                                 <div class="col-sm-2">
-                                    <input type="text" name="rNaslov">
+                                    <input type="text" name="kNaslov">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <p>Kraj</p>
-                                </div>
-                                <div class="col-sm-2">
-                                    <input type="text" name="rKraj">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <p>Poštna številka</p>
-                                </div>
-                                <div class="col-sm-2">
-                                    <input type="text" name="rPostna">
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="container2">
-
-                            <h3 class="reg">Uporabniško ime in geslo</h3>
-
-                        </div>
-
-                        <div class="container1">
 
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <p>Uporabniško ime</p>
+                                    <p>Ime</p>
                                 </div>
                                 <div class="col-sm-2">
-                                    <input type="text" name="rUporabnisko">
+                                    <input type="text" name="kAvtorIme">
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <p>Geslo</p>
+                                    <p>Priimek</p>
                                 </div>
                                 <div class="col-sm-2">
-                                    <input type="password" name="rGeslo">
+                                    <input type="text" name="kAvtorPriimek">
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <p>Ponovi geslo</p>
+                                    <p>ISBN</p>
                                 </div>
                                 <div class="col-sm-2">
-                                    <input type="password" name="rGeslo1">
+                                    <input type="text" name="kISBN">
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <p>Založba</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="text" name="kZalozba">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <p>Leto izdaje</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="text" name="kLetoIzdaje">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <p>Prevod</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="text" name="kPrevod">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <p>Ilustracije</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="text" name="kIlustracije">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <p>Žanr knjige</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select name="kZanr">
+                                        <option value="g">g</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <p>Ciljna publika</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="text" name="kCiljnaPublika">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <p>Ilustracije</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="text" name="kIlustracije">
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="row">
@@ -169,7 +190,6 @@
             <div class="col-sm-3"></div>
         </div>
     </div>
-    
 
 
 </div>

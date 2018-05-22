@@ -20,5 +20,17 @@ public class MainController {
         return "Index";
     }
 
+    @RequestMapping(value = { "/dodajKnj" }, method = RequestMethod.GET)
+    public String dodajKnj(Model model) {
+        model.addAttribute("message", this.message);
+        return "DodajKnj";
+    }
+
+    @RequestMapping(value = { "/registracija" }, method = RequestMethod.GET)
+    public String registracija(Model model) {
+        model.addAttribute("message", this.message);
+        return "Registracija";
+    }
+
 
 }

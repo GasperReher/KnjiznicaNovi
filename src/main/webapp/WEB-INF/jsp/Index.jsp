@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <div>
+    <div class="glava">
         <header style="background-color: cornflowerblue">
             <div class="nav" style="width:100%" >
                 <div class="row">
@@ -42,6 +42,9 @@
             <li>
                 <a href="registracija">Registracija</a>
             </li>
+            <li>
+                <a href="dodajKnj">Dodaj Knjigo</a>
+            </li>
             <div id="prijava">
                 <li class="active" style="float:right;color:white" >
                     <a href="">Prijava</a>
@@ -59,11 +62,27 @@
     </div>
 
     <br>
-    <div>
-        <p>
-            Mi smo carji
-        </p>
+    <div class="telo">
+        <div class="police">
+            <div class="slikadomov">
+                <img src="slike/police_domaca/polica1.jpg" class="slika_police">
+                <img src="slike/police_domaca/polica2.jpg" class="slika_police">
+                <img src="slike/police_domaca/polica3.jpg" class="slika_police">
+            </div>
+            <div class="slikadomov">
+                <img src="slike/police_domaca/polica4.jpg" class="slika_police">
+                <img src="slike/police_domaca/polica5.jpg" class="slika_police">
+                <img src="slike/police_domaca/polica6.jpg" class="slika_police">
+            </div>
+            <div class="slikadomov">
+                <img src="slike/police_domaca/polica7.jpg" class="slika_police">
+                <img src="slike/police_domaca/polica8.jpg" class="slika_police">
+                <img src="slike/police_domaca/polica9.jpg" class="slika_police">
+            </div>
+        </div>
     </div>
+
+
 </div>
 
 
