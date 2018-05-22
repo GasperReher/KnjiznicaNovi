@@ -17,7 +17,7 @@ public class MainController {
     @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
     public String index(Model model) {
         model.addAttribute("message", this.message);
-        return "Index";
+        return "Iskanje";
     }
 
 

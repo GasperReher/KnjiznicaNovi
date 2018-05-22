@@ -61,7 +61,7 @@
     <br>
     <div>
         <p>
-            Mi smo carji
+            napsii nek
         </p>
     </div>
 </div>
