@@ -76,6 +76,7 @@
                             <div class="col-sm-2">
                                 <select name="izbirni_seznam_ena" id="izbirni_seznam_ena">
                                     <option selected = "selected">Avtor</option>
+                                    <option>Naslov</option>
                                     <option>ISBN</option>
                                     <option>Založba</option>
                                     <option>Leto Izdaje</option>
@@ -87,14 +88,33 @@
                                 </select>
                             </div>
                             <div class="col-sm-2">
-                                <input type="text" name="rNaslov">
+                                <input type="text" name="rPrviVnos">
                             </div>
-
                         </div>
                         <div class="row">
                             <div class="col-sm-2">
                                 <select name="izbirni_seznam_dva" id="izbirni_seznam_dva">
                                     <option>Avtor</option>
+                                    <option selected = "selected">Naslov</option>
+                                    <option>ISBN</option>
+                                    <option>Založba</option>
+                                    <option>Leto Izdaje</option>
+                                    <option>Prevod</option>
+                                    <option>Ilustracije</option>
+                                    <option>Žanr</option>
+                                    <option>Ciljna publika</option>
+                                    <option>Prostor</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" name="rDrugiVnos">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <select name="izbirni_seznam_tri" id="izbirni_seznam_tri">
+                                    <option>Avtor</option>
+                                    <option>Naslov</option>
                                     <option selected = "selected">ISBN</option>
                                     <option>Založba</option>
                                     <option>Leto Izdaje</option>
@@ -106,13 +126,33 @@
                                 </select>
                             </div>
                             <div class="col-sm-2">
-                                <input type="text" name="rAvtor">
+                                <input type="text" name="rTretjiVnos">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-2">
-                                <select name="izbirni_seznam_tri" id="izbirni_seznam_tri">
+                                <select name="izbirni_seznam_stiri" id="izbirni_seznam_stiri">
                                     <option>Avtor</option>
+                                    <option>Naslov</option>
+                                    <option>ISBN</option>
+                                    <option selected = "selected">Založba</option>
+                                    <option>Leto Izdaje</option>
+                                    <option>Prevod</option>
+                                    <option>Ilustracije</option>
+                                    <option>Žanr</option>
+                                    <option>Ciljna publika</option>
+                                    <option>Prostor</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" name="rCetrtiVnos">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <select name="izbirni_seznam_pet" id="izbirni_seznam_pet">
+                                    <option>Avtor</option>
+                                    <option>Naslov</option>
                                     <option>ISBN</option>
                                     <option>Založba</option>
                                     <option selected = "selected">Leto Izdaje</option>
@@ -124,13 +164,14 @@
                                 </select>
                             </div>
                             <div class="col-sm-2">
-                                <input type="text" name="rISBN">
+                                <input type="text" name="rPetiVnos">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-2">
-                                <select name="izbirni_seznam_stiri" id="izbirni_seznam_stiri">
+                                <select name="izbirni_seznam_sest" id="izbirni_seznam_sest">
                                     <option>Avtor</option>
+                                    <option>Naslov</option>
                                     <option>ISBN</option>
                                     <option>Založba</option>
                                     <option>Leto Izdaje</option>
@@ -142,13 +183,14 @@
                                 </select>
                             </div>
                             <div class="col-sm-2">
-                                <input type="text" name="rKljucneBesede">
+                                <input type="text" name="rSestiVnos">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-2">
-                                <select name="izbirni_seznam_pet" id="izbirni_seznam_pet">
+                                <select name="izbirni_seznam_sedem" id="izbirni_seznam_sedem">
                                     <option>Avtor</option>
+                                    <option>Naslov</option>
                                     <option>ISBN</option>
                                     <option>Založba</option>
                                     <option>Leto Izdaje</option>
@@ -160,13 +202,14 @@
                                 </select>
                             </div>
                             <div class="col-sm-2">
-                                <input type="text" name="rKraj">
+                                <input type="text" name="rSedmiVnos">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-2">
-                                <select name="izbirni_seznam_sest" id="izbirni_seznam_sest">
+                                <select name="izbirni_seznam_osem" id="izbirni_seznam_osem">
                                     <option>Avtor</option>
+                                    <option>Naslov</option>
                                     <option>ISBN</option>
                                     <option>Založba</option>
                                     <option>Leto Izdaje</option>
@@ -178,13 +221,14 @@
                                 </select>
                             </div>
                             <div class="col-sm-2">
-                                <input type="text" name="rPostna">
+                                <input type="text" name="rOsmiVnos">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-2">
-                                <select name="izbirni_seznam_sedem" id="izbirni_seznam_sedem">
+                                <select name="izbirni_seznam_devet" id="izbirni_seznam_devet">
                                     <option>Avtor</option>
+                                    <option>Naslov</option>
                                     <option>ISBN</option>
                                     <option>Založba</option>
                                     <option>Leto Izdaje</option>
@@ -196,13 +240,14 @@
                                 </select>
                             </div>
                             <div class="col-sm-2">
-                                <input type="text" name="rIlustracije">
+                                <input type="text" name="rDevetiVnos">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-2">
-                                <select name="izbirni_seznam_osem" id="izbirni_seznam_osem">
+                                <select name="izbirni_seznam_deset" id="izbirni_seznam_deset">
                                     <option>Avtor</option>
+                                    <option>Naslov</option>
                                     <option>ISBN</option>
                                     <option>Založba</option>
                                     <option>Leto Izdaje</option>
@@ -214,7 +259,7 @@
                                 </select>
                             </div>
                             <div class="col-sm-2">
-                                <input type="text" name="rCiljnaPublika">
+                                <input type="text" name="rDesetiVnos">
                             </div>
                         </div>
                     </div>
