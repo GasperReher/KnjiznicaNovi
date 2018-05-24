@@ -14,8 +14,7 @@ button {
     margin-top:5%;
 }
 body{
-    background-image: url("../slike/bg.jpg");
-    background-size: 100%;
+    background-color: #e6ffff;
 }
 ul {
     list-style-type: none;
@@ -37,7 +36,14 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
+li p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin:0 0 ;
+}
 
 li input{
     color:black;
@@ -103,4 +109,15 @@ h3.reg{
 .slika_police{
     width: 33%;
     margin:0px;
+}
+.alert{
+    margin-bottom:15px;
+    padding:5px;
+    margin-top:5px;
+}
+.neprijavljen{
+    display:none;
+}
+.prijavljen{
+    display:none;
 }

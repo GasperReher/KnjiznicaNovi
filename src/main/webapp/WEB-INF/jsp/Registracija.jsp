@@ -3,10 +3,11 @@
 <head>
 
     <%@ page contentType="text/html; charset=UTF-8" %>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Moja Knjiznica</title>
 
 </head>
@@ -44,7 +45,7 @@
             </li>
             <div id="prijava">
                 <li class="active" style="float:right;color:white" >
-                    <a href="">Prijava</a>
+                    <a href="#" onclick="submitPrijava()">Prijava</a>
                 </li>
                 <li style="float:right;color:white" >
                     <input type="password" name="pGeslo" placeholder="Geslo">
@@ -65,7 +66,7 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <div class="userData">
-                    <form name="vnosP">
+                    <form id="vnosP" name="vnosP">
                         <div class="container2">
 
                             <h3 class="reg">Podatki uporabnika</h3>
@@ -92,17 +93,20 @@
                             <div class="row">
                                 <div class="col-sm-2">
                                     <p>Email</p>
+
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-4">
                                     <input type="text" name="rEmail">
+                                    <div id="emailalert"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-2">
                                     <p>Naslov</p>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-4">
                                     <input type="text" name="rNaslov">
+                                    <div id="naslovalert"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -144,23 +148,25 @@
                                 <div class="col-sm-2">
                                     <p>Geslo</p>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-4">
                                     <input type="password" name="rGeslo">
+                                    <div id="gesloalert"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-2">
                                     <p>Ponovi geslo</p>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-4">
                                     <input type="password" name="rGeslo1">
+                                    <div id="geslo1alert"></div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-5"></div>
-                            <div class="col-sm-2"><input id="submit-reg" type="submit" value="Potrdi"></div>
+                            <div class="col-sm-2"><a id="submit-reg" onclick="preveriReg()" href="#">Potrdi</a></div>
                         </div>
                     </form>
                 </div>
@@ -169,9 +175,6 @@
             <div class="col-sm-3"></div>
         </div>
     </div>
-    
-
-
 </div>
 </body>
 </html>

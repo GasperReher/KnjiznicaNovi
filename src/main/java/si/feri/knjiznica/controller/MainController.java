@@ -1,10 +1,13 @@
 package si.feri.knjiznica.controller;
 
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import javax.script.*;
 
 @Controller
 public class MainController {
@@ -31,6 +34,15 @@ public class MainController {
         model.addAttribute("message", this.message);
         return "Registracija";
     }
+
+    @RequestMapping(value = { "/iskanje" }, method = RequestMethod.GET)
+    public String iskanje(Model model) {
+        model.addAttribute("message", this.message);
+
+        return "IndexP";
+    }
+
+
 
 
 }

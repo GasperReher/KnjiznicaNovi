@@ -3,10 +3,10 @@
 <head>
 
     <%@ page contentType="text/html; charset=UTF-8" %>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Moja Knjiznica</title>
 
 </head>
@@ -86,7 +86,7 @@
 
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <p>Ime</p>
+                                    <p>Ime avtorja</p>
                                 </div>
                                 <div class="col-sm-2">
                                     <input type="text" name="kAvtorIme">
@@ -95,7 +95,7 @@
 
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <p>Priimek</p>
+                                    <p>Priimek avtorja</p>
                                 </div>
                                 <div class="col-sm-2">
                                     <input type="text" name="kAvtorPriimek">

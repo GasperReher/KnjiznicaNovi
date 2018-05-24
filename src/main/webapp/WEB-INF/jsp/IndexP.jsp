@@ -9,20 +9,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Moja Knjiznica</title>
 
-    
-    <script >
-        function prijav() {
-            $("div.prijavljen").show();
-            $("div.neprijavljen").hide();
-        }
-        function neprijav() {
-            $("div.neprijavljen").show();
-            $("div.prijavljen").hide();
-        }
-        
-    </script>
 </head>
 <body>
+<%
+
+    session.setAttribute( "ime", "jan" );
+%>
+
+
 <div id="wrapper">
     <div class="glava">
         <header style="background-color: cornflowerblue">
@@ -42,8 +36,8 @@
             </div>
         </header>
     </div>
-    <div class="neprijavljen">
-        <div class="nav">
+
+    <div class="nav">
         <ul>
             <li class="active">
                 <a href="index">Domov</a>
@@ -57,51 +51,17 @@
             <li>
                 <a href="dodajKnj">Dodaj Knjigo</a>
             </li>
-            <div id="prijava">
-                <form name="prijava" action="Prijava" id="loginForm" >
-                <li class="active" style="float:right;color:white" >
-                    <a href="#" onclick="submitPrijava()">Prijava</a>
-                </li>
-                <li style="float:right;color:white" >
-                    <input type="password" name="pGeslo" placeholder="Geslo">
-                </li>
-                <li style="float:right;color:white" >
-                    <input type="text" name="pUporabnisko" placeholder="Uporabniško ime">
-                </li>
-                </form>
-            </div>
+            <li>
+                <a href="profil">Profil</a>
+            </li>
+            <li style="float:right">
+                <div class="prijavljen">
+                    <p>Pozdravljen, <%= session.getAttribute( "ime" ) %></p>
+                </div>
+            </li>
 
 
         </ul>
-    </div>
-    </div>
-    <div class="prijavljen">
-        <div class="nav">
-            <ul>
-                <li class="active">
-                    <a href="index">Domov</a>
-                </li>
-                <li>
-                    <a href="iskanje">Iskanje knjig</a>
-                </li>
-                <li>
-                    <a href="registracija">Registracija</a>
-                </li>
-                <li>
-                    <a href="dodajKnj">Dodaj Knjigo</a>
-                </li>
-                <li>
-                    <a href="profil">Profil</a>
-                </li>
-                <li style="float:right">
-                    <div class="prijavljen">
-                        <p>Pozdravljen, <%= session.getAttribute( "ime" ) %></p>
-                    </div>
-                </li>
-
-
-            </ul>
-        </div>
     </div>
 
     <br>
@@ -123,8 +83,6 @@
                 <img src="slike/police_domaca/polica9.jpg" class="slika_police">
             </div>
         </div>
-        <button onclick="prijav()">Prijavljen</button>
-        <button onclick="neprijav()">Neprijavljen</button>
     </div>
 
 
