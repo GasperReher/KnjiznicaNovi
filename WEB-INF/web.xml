@@ -1,0 +1,19 @@
+
+<web-app>
+    <display-name>
+        KnjiznicaNova
+    </display-name>
+    <description>
+        app
+    </description>
+
+        <servlet>
+            <servlet-name>Test</servlet-name>
+            <servlet-class>si.feri.knjiznica.Servlets.Test</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>Test</servlet-name>
+            <url-pattern>/test</url-pattern>
+        </servlet-mapping>
+
+</web-app>

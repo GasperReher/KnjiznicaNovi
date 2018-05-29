@@ -8,12 +8,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Moja Knjiznica</title>
+    <script src="js/JavaScript.js"></script>
+    <script>
+        var session = '<%= session.getAttribute("currentSessionUser") %>'
+        document.write(session);
+    </script>
 
 </head>
 
 <body>
 <div id="wrapper">
-    <div>
+    <div class="glava">
         <header style="background-color: cornflowerblue">
             <div class="nav" style="width:100%" >
                 <div class="row">
@@ -32,33 +37,66 @@
         </header>
     </div>
 
-    <div class="nav">
-        <ul>
-            <li>
-                <a href="index">Domov</a>
-            </li>
-            <li class="active">
-                <a href="iskanje">Iskanje knjig</a>
-            </li>
-            <li>
-                <a href="registracija">Registracija</a>
-            </li>
-
-            <div id="prijava">
-                <li class="active" style="float:right;color:white" >
-                    <a href="">Prijava</a>
+    <div class="neprijavljen">
+        <div class="nav">
+            <ul>
+                <li class="active">
+                    <a href="index">Domov</a>
                 </li>
-                <li style="float:right;color:white" >
-                    <input type="password" name="pGeslo" placeholder="Geslo">
+                <li>
+                    <a href="iskanje">Iskanje knjig</a>
                 </li>
-                <li style="float:right;color:white" >
-                    <input type="text" name="pUporabnisko" placeholder="Uporabniško ime">
+                <li>
+                    <a href="registracija">Registracija</a>
                 </li>
-            </div>
+                <div id="prijava">
+                    <form method="post" action="loginIskanje" id="loginform" >
+                        <li class="active" style="float:right;color:white" >
+                            <a href="#" onclick="submitPrijava()">Prijava</a>
+                        </li>
+                        <li style="float:right;color:white" >
+                            <input type="password" name="pGeslo" placeholder="Geslo">
+                        </li>
+                        <li style="float:right;color:white" >
+                            <input type="text" name="pUporabnisko" placeholder="Uporabniško ime">
+                        </li>
+                    </form>
+                </div>
 
 
-        </ul>
-    </div></div>
+            </ul>
+        </div>
+    </div>
+    <div class="prijavljen">
+        <div class="nav">
+            <ul>
+                <li class="active">
+                    <a href="index">Domov</a>
+                </li>
+                <li>
+                    <a href="iskanje">Iskanje knjig</a>
+                </li>
+                <li>
+                    <a href="dodajKnj">Dodaj Knjigo</a>
+                </li>
+                <li>
+                    <a href="profil">Profil</a>
+                </li>
+                <li style="float:right">
+                    <div class="prijavljen">
+                        <p>Pozdravljen, <%= session.getAttribute( "currentSessionUserName" ) %></p>
+                    </div>
+                </li>
+                <li>
+
+                    <a href="logout">Odjava</a>
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
 <br>
 <div class="container" style="width:100%">
     <div class="row" style="width:100%">
@@ -225,5 +263,8 @@
         <div class="col-sm-3"></div>
     </div>
 </div>
+    <script>
+        prijav();
+    </script>
 </body>
 </html>

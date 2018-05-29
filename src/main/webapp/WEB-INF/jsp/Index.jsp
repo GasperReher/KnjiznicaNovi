@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <%@ page import = "javax.servlet.RequestDispatcher" %>
     <%@ page contentType="text/html; charset=UTF-8" %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Moja Knjiznica</title>
+    <script src="js/JavaScript.js"></script>
+    <script>
+        var session = '<%= session.getAttribute("currentSessionUser") %>'
 
-    
-    <script >
-        function prijav() {
-            $("div.prijavljen").show();
-            $("div.neprijavljen").hide();
-        }
-        function neprijav() {
-            $("div.neprijavljen").show();
-            $("div.prijavljen").hide();
-        }
-        
+        document.write(session);
     </script>
 </head>
 <body>
@@ -54,11 +47,8 @@
             <li>
                 <a href="registracija">Registracija</a>
             </li>
-            <li>
-                <a href="dodajKnj">Dodaj Knjigo</a>
-            </li>
             <div id="prijava">
-                <form name="prijava" action="Prijava" id="loginForm" >
+                <form method="post" action="login" id="loginform" >
                 <li class="active" style="float:right;color:white" >
                     <a href="#" onclick="submitPrijava()">Prijava</a>
                 </li>
@@ -85,9 +75,6 @@
                     <a href="iskanje">Iskanje knjig</a>
                 </li>
                 <li>
-                    <a href="registracija">Registracija</a>
-                </li>
-                <li>
                     <a href="dodajKnj">Dodaj Knjigo</a>
                 </li>
                 <li>
@@ -95,8 +82,13 @@
                 </li>
                 <li style="float:right">
                     <div class="prijavljen">
-                        <p>Pozdravljen, <%= session.getAttribute( "ime" ) %></p>
+                        <p>Pozdravljen, <%= session.getAttribute( "currentSessionUserName" ) %></p>
                     </div>
+                </li>
+                <li>
+
+                    <a href="logout">Odjava</a>
+
                 </li>
 
 
@@ -130,6 +122,8 @@
 
 </div>
 
-
+<script>
+    prijav();
+</script>
 </body>
 </html>

@@ -131,6 +131,19 @@ function preveriNaslov(){
 
 function submitPrijava(){
     document.getElementById("loginform").submit();
-
 }
 
+function odjava() {
+    document.getElementById("odjava").submit();
+}
+
+function prijav() {
+    if(session=="null"  ) {
+        $("div.prijavljen").hide();
+        $("div.neprijavljen").show();
+    }
+    else {
+        $("div.neprijavljen").hide();
+        $("div.prijavljen").show();
+    }
+}

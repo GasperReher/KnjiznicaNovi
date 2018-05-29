@@ -66,7 +66,7 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <div class="userData">
-                    <form id="vnosP" name="vnosP">
+                    <form action="regBaza" id="vnosP" name="vnosP" method="post">
                         <div class="container2">
 
                             <h3 class="reg">Podatki uporabnika</h3>
